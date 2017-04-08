@@ -1,4 +1,4 @@
-/* General styles */
+/** General styles **/
 
 body, html {
   height: 100%;
@@ -9,9 +9,9 @@ body, html {
   padding-bottom: 15px;
 }
 
-/* Horizontal ruler on top of a block.
-   Pseudo-element is used instead of border
-   to accomodate padding within the block. */
+/** Horizontal ruler on top of a block.
+    Pseudo-element is used instead of border
+    to accomodate padding within the block. **/
 .hr-top::before {
   display: block;
   background-color: #eee;
@@ -37,7 +37,7 @@ body, html {
   background: #eee center/cover no-repeat;
 }
 
-/* First screen */
+/** First screen **/
 
 .photo1 {
   height: 70%;
@@ -49,7 +49,7 @@ body, html {
   position: relative;
 }
 
-/* Second screen */
+/** Second screen **/
 
 .photo2 {
   height: 75%;
@@ -61,7 +61,7 @@ body, html {
   position: relative;
 }
 
-/* Responsive breakpoint */
+/** Responsive breakpoint **/
 
 @media (min-width: 768px) {
 
@@ -83,7 +83,12 @@ body, html {
 
 }
 
-/* Parallax effect breakpoint */
+/** Parallax effect breakpoint.
+    Background-attachment is switched to 'fixed'
+    on big screens to turn on a parallax effect while scrolling.
+    On small screens parallax is switched off
+    because 'backround-attachment: fixed' is not
+    supported in Mobile Safari browser (all iPhones). **/
 
 @media (min-device-width: 1024px) {
 
