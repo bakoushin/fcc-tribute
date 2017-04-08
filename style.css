@@ -1,0 +1,94 @@
+/* General styles */
+
+body, html {
+  height: 100%;
+  font-size: 16px;
+}
+
+.padding-bottom {
+  padding-bottom: 15px;
+}
+
+/* Horizontal ruler on top of a block.
+   Pseudo-element is used instead of border
+   to accomodate padding within the block. */
+.hr-top::before {
+  display: block;
+  background-color: #eee;
+  height: 2px;
+}
+
+.abs-center {
+  width: 100%;
+  text-align: center;
+  padding: 0 15px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.abs-center > * {
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.photo {
+  background: #eee center/cover no-repeat;
+}
+
+/* First screen */
+
+.photo1 {
+  height: 70%;
+  background-image: url(https://www.inmemoryglobal.com/wp-content/uploads/2015/10/Jonas-Salk-inmemory.jpg);
+}
+
+.header {
+  height: 30%;
+  position: relative;
+}
+
+/* Second screen */
+
+.photo2 {
+  height: 75%;
+  background-image: url(http://www.post-gazette.com/image/2014/05/18/ca0,162,1248,1410/9m300lbt-3.jpg);
+}
+
+.footer {
+  height: 25%;
+  position: relative;
+}
+
+/* Responsive breakpoint */
+
+@media (min-width: 768px) {
+
+  .photo1 {
+    height: 75%;
+  }
+
+  .header {
+    height: 25%;
+  }
+
+  .photo2 {
+    height: 80%;
+  }
+
+  .footer {
+    height: 20%;
+  }
+
+}
+
+/* Parallax effect breakpoint */
+
+@media (min-device-width: 1024px) {
+
+  .photo {
+    background-attachment: fixed;
+  }
+
+}
