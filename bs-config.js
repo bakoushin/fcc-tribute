@@ -1,5 +1,5 @@
 module.exports = {
   "server": "./",
-  "files": ["*.html", "*.css"],
+  "files": ["*.html", "*.css", "*.js"],
   "browser": "Google Chrome Canary.app",
 };
