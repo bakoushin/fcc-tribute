@@ -65,6 +65,9 @@ body, html {
 
 @media (min-width: 768px) {
 
+  /** On large screens less height is needed
+      for header and footer **/
+
   .photo1 {
     height: 75%;
   }
