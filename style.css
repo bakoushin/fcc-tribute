@@ -80,7 +80,7 @@ body, html {
 }
 
 .arrow::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   width: 100%;
@@ -92,7 +92,7 @@ body, html {
 }
 
 .arrow::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 12.5%;
